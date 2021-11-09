@@ -71,4 +71,4 @@ function uploadRecord() {
   };
 }
 
-window.addEventListener("online", uploadBudget);
+window.addEventListener("online", uploadRecord);
