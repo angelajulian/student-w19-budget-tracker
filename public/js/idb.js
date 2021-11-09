@@ -58,7 +58,7 @@ getAll.onsuccess = function () {
         }
         // open one more transaction
         const transaction = db.transaction(["new_budget"], "readwrite");
-        // access the new_pizza object store
+
         const budgetObjectStore = transaction.objectStore("new_budget");
         // clear all items in your store
         budgetObjectStore.clear();
@@ -71,4 +71,4 @@ getAll.onsuccess = function () {
   }
 };
 
-window.addEventListener("online", uploadPizza);
+window.addEventListener("online", uploadBudget);
